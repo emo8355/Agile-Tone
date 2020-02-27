@@ -5,7 +5,9 @@
 ## Special Instructions
 
 > Auth Server: port 4000
+
 > Application Server: port 3000
-> ​
-> Endpoint api doc
+
+### Endpoint api doc
+
 > '/apidoc'
