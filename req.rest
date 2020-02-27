@@ -1,0 +1,22 @@
+POST http://localhost:4000/api/auth/register HTTP/1.1
+content-type: application/json
+
+{
+    "name": "mike",
+    "email": "mike@email.com",
+    "password": "thisisanawesomepassword"
+}
+
+###
+
+GET http://localhost:4000/api/auth/me HTTP/1.1
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlM2Y4NDY4ZmY5YTM1NTE1MDY2MzU2NCIsImlhdCI6MTU4MTIyMDk2OCwiZXhwIjoxNTgxMzA3MzY4fQ.AX6KcLO3OaZU-Ge6JLWiuPcKBmvbdD14oPtX-XUnt44
+###
+
+POST http://localhost:4000/api/auth/login HTTP/1.1
+content-type: application/json
+
+{
+    "email": "mike@email.com",
+    "password": "thisisanawesomepassword"
+}
